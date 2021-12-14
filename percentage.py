@@ -1,3 +1,5 @@
+import pandas as pd
+
 def percentage(df,column):
         
     '''
@@ -7,7 +9,6 @@ def percentage(df,column):
     column: column to be represented.
     '''
 
-    import pandas as pd
     x = df[column].str.replace('%', '').astype(float)
     df[column] = x/100
     return df[column]
