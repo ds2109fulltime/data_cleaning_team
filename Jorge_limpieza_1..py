@@ -1,4 +1,6 @@
-def numeric(columns, df):
+new_df = df[['name', 'sex', 'ticket', 'embarked', 'boat', 'home.dest']]
+
+def numeric(columns):
     '''Esta función es para cambiar los valores categóricos a valores numéricos de una columna concreta
     Los parámetros son:
     columns = columna a modificar
@@ -9,4 +11,4 @@ def numeric(columns, df):
     for i in columns:
         le.fit(df[i])
         df[i] = le.transform(df[i])
-    return columns
+numeric(columns=new_df)
