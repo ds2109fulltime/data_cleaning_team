@@ -1,3 +1,9 @@
+import time
+from glob import glob
+import os
+import cv2
+
+
 def img_reshape(folder_in, folder_out, folder_main, format, size):
 
     '''
@@ -17,13 +23,6 @@ def img_reshape(folder_in, folder_out, folder_main, format, size):
         size: size to which we want to reduce
             
     '''
-
-
-
-    import time
-    from glob import glob
-    import os
-    import cv2
 
 
 

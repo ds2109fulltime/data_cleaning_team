@@ -1,3 +1,8 @@
+import time
+from glob import glob
+import cv2
+import numpy as np
+
 def img_to_array(folder_in, format, max_elem=7000):
 
     '''
@@ -13,10 +18,6 @@ def img_to_array(folder_in, format, max_elem=7000):
             
     '''
 
-    import time
-    from glob import glob
-    import cv2
-    import numpy as np
 
 
     st = time.time()
