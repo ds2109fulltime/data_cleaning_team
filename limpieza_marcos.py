@@ -17,7 +17,7 @@ def nulos_0 (data):
     return df
 
 def nulos_media (data,columna):
-    mean_df = data['grade'].mean()
+    mean_df = data[columna].mean()
     df = data.fillna(mean_df)
     return df
 
